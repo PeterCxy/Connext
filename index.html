@@ -15,7 +15,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
 		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/theme/solarized.css" id="theme">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
 
 		<!-- Code syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -40,15 +40,17 @@
 
         <div class="slides">
 
-        <section>
-            <h1>我与BL和纸飞机的故事</h1>
-            <h3>(和黑历史)</h3>
+        <section data-background="#212121">
+            <h1>BlackLight</h1>
+			<h2>和</h2>
+			<h1>纸飞机
+            <h4>(还有黑历史)</h4>
             <p>
                 <small>By @PeterCxy (颠倒的阿卡林型次元)</small>
             </p>
         </section>
 
-        <section>
+        <section data-background="#3E2723">
             <section>
                 <h1>关于我</h1>
             </section>
@@ -77,14 +79,17 @@
             </section>
             <section>
                 <h2>来到这里...</h2>
-                <li class="fragment">唔，是第一次演讲啦</li>
-                <li class="fragment">安利一下自己的作品</li>
-                <li class="fragment">讲讲自己的经历(还有黑历史)</li>
-                <li class="fragment">嗯，不废话了</li>
+				<ul>
+                	<li class="fragment">唔，是第一次演讲啦</li>
+                	<li class="fragment">安利一下自己的作品</li>
+                	<li class="fragment">讲讲自己的经历(还有黑历史)</li>
+					<li class="fragment">以及……经验？</li>
+                	<li class="fragment">嗯，不废话了</li>
+				</ul>
             </section>
         </section>
 
-        <section>
+        <section data-background="#C5E1A5">
             <section>
                 <h1>BlackLight</h1>
                 <h3>我的第一个Android App</h3>
@@ -93,27 +98,255 @@
                 <h2>火花</h2>
                 <p>
                     <span class="fragment">初二，我的第一个Android手机</span>
-                    <span class="fragment">后来赶潮流用上了微博</span>
-                    <span class="fragment">Weico/四次元/Fuubo...</span>
-                    <span class="fragment">还是自己开了一个大坑...</span>
+                    <span class="fragment">然后我赶潮流用上了微博</span>
+                    <span class="fragment">当了解到什么是"Android Design"并深深喜欢上她以后</span>
+                    <span class="fragment">我就萌生了自己开发一个客户端的想法</span>
+					<span class="fragment">想要做一个自己喜欢的、自由的微博客户端</span>
                 </p>
             </section>
+			<section>
+				<h2>四次元</h2>
+				<p class="fragment">险些让我放弃这个想法的，是四次元这个微博客户端。</p>
+				<p class="fragment">自由软件 | Android Design | 以及隐藏的"黑魔法"</p>
+				<p class="fragment">正用的开心，它却渐渐沉寂下去</p>
+				<p class="fragment">时隔大约一年，终于又重拾要做微博客户端的想法</p>
+			</section>
             <section>
                 <h2>Super-Alpha</h2>
                 <ul>
                     <li class="fragment">学习开发的最佳方式--挖坑</li>
                     <li class="fragment">从Android用户到第一个Android App</li>
-                    <li class="fragment">现学现卖的Alpha</li>
-                    <li class="fragment">截图丢了(捂脸)</li>
+                    <li class="fragment">边看文档边做的Super-Alpha</li>
+                    <li class="fragment">截图丢了(捂脸), 但是当时并没有设计师，所以这图也没什么……价值</li>
                 </ul>
             </section>
-            <section>
-                <h2>最初几个版本和纸飞机</h2>
-                <ul>
-                    <li class="fragment"></li>
-                </ul>
-            </section>
+			<section>
+				<h2>勇士们</h2>
+				<p class="fragment">一个没有人支持的项目是活不下去的</p>
+				<p class="fragment">尽管第一个版本连"流畅""能用"都做不到</p>
+				<p class="fragment">但是有不止十位勇士……</p>
+			</section>
         </section>
+
+		<section data-background="#FFA000">
+			<section>
+				<h2>开发</h2>
+				<h3>手机？开发机！</h3>
+			</section>
+			<section>
+				<h2>Why</h2>
+				<ul>
+					<li class="fragment">没有电脑</li>
+					<li class="fragment">喜欢折腾</li>
+					<li class="fragment">所谓成就感</li>
+				</ul>
+			</section>
+			<section>
+				<h2>AIDE</h2>
+				<ul>
+					<li class="fragment">Android上运行的IDE</li>
+					<li class="fragment">ANT + Android SDK</li>
+					<li class="fragment">解决了入坑的最后一个障碍</li>
+				</ul>
+			</section>
+			<section>
+				<h2>BUT...</h2>
+				<p><blockquote>&ldquo;你是把编译器的lint都关掉了么？&rdquo;</blockquote><small>—— 但丁不淡定</small></p>
+				<p class="fragment">它的语法检查器！！</p>
+				<p class="fragment">甚至连漏掉 <q>&ldquo;@Override&rdquo;</q> 都不会报错</p>
+			</section>
+			<section>
+				<h2>BUCK</h2>
+				<ul>
+					<li class="fragment">Facebook做的Android App编译系统</li>
+					<li class="fragment">似乎很轻量？</li>
+					<li class="fragment">配置文件很优雅</li>
+				</ul>
+			</section>
+			<section>
+				<h2>BUT...</h2>
+				<p><blockquote>&ldquo;BUCK的产品哲学有问题&rdquo;</blockquote><small>—— 但丁不淡定</small></p>
+				<pre><code data-trim>
+public class R {
+	...
+	public static class id {
+		public static int some_id = xxx;
+	}
+	// final 在哪里！！！final在哪里！！！
+}
+				</code></pre>
+				<p><small>(而且手机上跑不起来)(交叉编译无力)</small></p>
+			</section>
+			<section>
+				<h2>Makefile</h2>
+				<p><q>&ldquo;Termianl IDE&rdquo;</q> & <q>&ldquo;Apktool for Android&rdquo;</q></p>
+				<p class="fragment">一套完整的OpenJDK for ARMv7!!!</p>
+				<p class="fragment">还带有 <q>GNU Make</q>!!! 还有aapt!!!</p>
+			</section>
+			<section>
+				<h2>BUT...</h2>
+				<p><blockquote>&ldquo;我一晚上大概能调试编译5次&rdquo;</blockquote><small>—— 我</small></p>
+				<p class="fragment">Makefile和那个OpenJDK在手机上效率极低……</p>
+				<p class="fragment">生怕哪天手机炸了……</p>
+				<p class="fragment">而且连 <q>BuildConfig<q> 这种东西都是手工生成……</p>
+				<p class="fragment">更不用说我用vim做的代码自动完成……</p>
+			</section>
+			<section>
+				<h2>Later...</h2>
+				<h3>The Gradle...</h3>
+			</section>
+		</section>
+
+		<section data-background="#33691E">
+			<section>
+				<h2>机缘</h2>
+				<h3>没有他们，没有BlackLight</h3>
+			</section>
+			<section>
+				<h2>@但丁不淡定</h2>
+				<p>如果没有及时吐槽我的代码风格和习惯，我也许现在还在用……</p>
+				<pre><code data-trim>
+public interface BaseListModel&lt;ITEM, LIST&gt; {
+	...
+}
+				</code></pre>
+				<p>或</p>
+				<pre><code data-trim>
+public class SomeAdapter extends Adapter {
+	private List&lt;View&gt; mViews; // 把每个列表项的View都存进来
+	...
+}
+				</code></pre>
+			</section>
+			<section>
+				<h2>团队</h2>
+				<h3>PaperAirplane Dev Team</h3>
+			</section>
+			<section>
+				<h2>纸飞机</h2>
+				<p class="fragment">BlackLight 终于找到了一个家</p>
+				<p class="fragment">纸飞机，一个曾经由高中生组成的开发团队</p>
+				<p class="fragment"><del>哦不，现在是由清华大学学生领导的了</del></p>
+			</section>
+			<section>
+				<h2>BlackLight 开发小组</h2>
+				<p><small>其实也就是大半个纸飞机了……</small></p>
+				<ul>
+					<li class="fragment">PeterCxy (我) - 维护者</li>
+					<li class="fragment">fython (某烧饼) - 贡献者(UI/适配什么的)</li>
+					<li class="fragment">Xavier Yao - 自称为 <q>首席段子手</q> 的纸飞机创始人</li>
+					<li class="fragment">Harry Chen - 也是贡献者</li>
+				</ul>
+				<p class="fragment"><small>* 悄悄告诉你：以上排名不分先后</small></p>
+			</section>
+			<section>
+				<h2>Here, BlackLight goes...</h2>
+			</section>
+		</section>
+
+		<section data-background="#9E9D24">
+			<section>
+				<h2>现在的</h2>
+				<h3>BlackLight...</h3>
+			</section>
+			<section>
+				<h2>构建系统</h2>
+				<ul>
+					<li class="fragment">Gradle</li>
+					<li class="fragment">Maven (JCenter)</li>
+					<li class="fragment">Android Studio (PC)</li>
+					<li class="fragment">AIDE (Mobile)</li>
+				</ul>
+			</section>
+			<section>
+				<h2>哲学</h2>
+				<ul>
+					<li class="fragment">做，并做好一件事</li>
+					<li class="fragment">轮子，是可以造的</li>
+					<li class="fragment">强迫症，并不是强迫</li>
+					<li class="fragment">偷懒，进步之源</li>
+				</ul>
+			</section>
+			<section>
+				<h2>所以...</h2>
+				<p><small>Code Style & More</small></p>
+				<p class="fragment">不要混杂的缩进</p>
+				<p class="fragment">尝试用最简单的写法</p>
+				<p class="fragment">曾经用过 <q>ButterKnife</q> 一类开发框架</p>
+				<p class="fragment">不过后来发现这样偷懒也不错</p>
+				<pre class="fragment"><code data-trim>
+public static final &lt;T extends View&gt; T $(View view, int id) {
+	return (T) view.findViewById(id);
+}
+				</code></pre>
+				<p class="fragment">还有更多……</p>
+			</section>
+			<section>
+				<h2>架构</h2>
+				<ul>
+					<li class="fragment">API<br/><small>- 尝试抽象API的遗留(不过也是个好东西)</small></li>
+					<li class="fragment">Model<br/><small>- 服务端回传数据类型的集合</small></li>
+					<li class="fragment">Cache<br/><small>- API层的包装，带有数据库/缓存等</small></li>
+					<li class="fragment">UI<br/><small>- Activities, Fragments...</small></p></li>
+					<li class="fragment">Support<br/><small>- 杂七杂八，比较失败</small></li>
+				</ul>
+			</section>
+			<section>
+				<h2>设计</h2>
+				<ul>
+					<li class="fragment">从 <q>Android Design</q> 到 <q>Material Design</q></li>
+					<li class="fragment">Sometimes naive</li>
+					<li class="fragment">我们一直在努力……</li>
+				</ul>
+			</section>
+			<section>
+				<h2>贡献</h2>
+				<p class="fragment">主要的贡献来自于纸飞机成员</p>
+				<p class="fragment">但是……</p>
+				<p class="fragment">不止一位有开发能力的BlackLight用户贡献了代码</p>
+				<p class="fragment">这样的人越来越多</p>
+				<p class="fragment">我们在尝试构建一个良性的生态</p>
+				<p class="fragment">这就是自由软件</p>
+			</section>
+			<section>
+				<h2>自由软件</h2>
+				<p class="fragment">BlackLight 将坚持自由</p>
+				<p class="fragment">自由软件是一种信仰</p>
+				<p class="fragment">但是，任重而道远</p>
+				<p class="fragment">关键是，你我</p>
+			</section>
+			<section>
+				<h2>Be free</h2>
+				<h3>Now, and forever.</h3>
+			</section>
+		</section>
+
+		<section data-background="#2962FF">
+			<section>
+				<h2>未来</h2>
+			</section>
+			<section>
+				<h2>BlackLight</h2>
+				<ul>
+					<li class="fragment">不会放弃</li>
+					<li class="fragment">重新设计</li>
+					<li class="fragment">必须重构</li>
+					<li class="fragment">只想做的更好</li>
+				</ul>
+			</section>
+			<section>
+				<h2>纸飞机</h2>
+				<ul>
+					<li class="fragment">爱这个团队</li>
+					<li class="fragment">开更多坑</li>
+					<li class="fragment">一起向前</li>
+				</ul>
+			</section>
+		</section>
+
+		<section data-background="#212121">
+			<h3>The End</h3>
+		</section>
 
 			</div>
 
